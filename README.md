@@ -1,12 +1,13 @@
 # React Admin Dashboard
 ### build in progress...
 
-Gmail Clone is a web application that provides a user interface similar to that of Gmail. The application uses Google authentication to authorize users, and once authorized, users can view their emails in their inbox, compose and send emails, and view their sent emails in their inbox.
+This admin dashboard is designed to help businesses manage their operations by providing real-time data visualization in chart format, and various useful apps to aid in daily tasks. The dashboard includes dedicated pages for orders, employees, and customers, allowing users to quickly access and manage critical data. Additionally, it provides several integrated apps like a calendar, kanban board, and text editor, to streamline workflow and improve productivity. With this dashboard, businesses can easily analyze and manage their operations, making informed decisions to increase efficiency and profitability.
 
 ## Features
 
 - Customizable dashboard theme and design.
 - Interactive charts, graphs, and tables.
+- Integrated apps like Calendar, Kanban Board, What you see is what you get text editor and color picker.
 
 
 
