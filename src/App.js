@@ -20,6 +20,7 @@ import {
   ColorMapping,
   Editor,
   Line,
+  Signin,
 } from "./pages";
 
 import { useStateContext } from "./contexts/Contextrovider";
@@ -27,7 +28,8 @@ import { useStateContext } from "./contexts/Contextrovider";
 import "./App.css";
 
 const App = () => {
-  const { activeMenu } = useStateContext();
+  const { activeMenu, themeSettings, setThemeSettings, currentColor } =
+    useStateContext();
   return (
     <>
       <div>
@@ -38,7 +40,8 @@ const App = () => {
                 <button
                   type="button"
                   className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white"
-                  style={{ background: "cyan", borderRadius: "50%" }}
+                  style={{ background: `${currentColor}`, borderRadius: "50%" }}
+                  onClick={() => setThemeSettings(true)}
                 >
                   <FiSettings />
                 </button>
@@ -64,7 +67,7 @@ const App = () => {
 
               {/* Routing  */}
               <div>
-                <ThemeSettings />
+                {themeSettings && <ThemeSettings />}
                 <Routes>
                   {/* Dashboard  */}
                   <Route path="/" element={<Ecommerce />} />
