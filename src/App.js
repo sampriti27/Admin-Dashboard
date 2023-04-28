@@ -64,13 +64,14 @@ const App = () => {
 
               {/* Routing  */}
               <div>
+                <ThemeSettings />
                 <Routes>
                   {/* Dashboard  */}
                   <Route path="/" element={<Ecommerce />} />
                   <Route path="/ecommerce" element={<Ecommerce />} />
 
                   {/* Pages  */}
-                  <Route path="/order" element={<Orders />} />
+                  <Route path="/orders" element={<Orders />} />
                   <Route path="/employees" element={<Employees />} />
                   <Route path="/customers" element={<Customers />} />
 
@@ -79,7 +80,7 @@ const App = () => {
                   <Route path="/kanban" element={<Kanban />} />
                   <Route path="/editor" element={<Editor />} />
                   <Route path="/calendar" element={<Calendar />} />
-                  <Route path="/colorPicker" element={<ColorPicker />} />
+                  <Route path="/color-picker" element={<ColorPicker />} />
 
                   {/* Charts  */}
                   <Route path="/line" element={<Line />} />
